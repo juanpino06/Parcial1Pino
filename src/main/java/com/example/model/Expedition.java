@@ -9,7 +9,7 @@ public class Expedition {
     private String leader;
     private String startDate;
     private String endDate;
-    private String state;
+    private String estate;
 
     public Expedition() {}
 
@@ -21,7 +21,7 @@ public class Expedition {
                     String leader,
                     String startDate,
                     String endDate,
-                    String state) {
+                    String estate) {
         this.id = id;
         this.name = name;
         this.code = code;
@@ -30,7 +30,7 @@ public class Expedition {
         this.leader = leader;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.state = state;
+        this.estate = estate;
     }
 
     public int getId() {
@@ -97,11 +97,11 @@ public class Expedition {
         this.endDate = endDate;
     }
 
-    public String getState() {
-        return state;
+    public String getEstate() {
+        return estate;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setEstate(String state) {
+        this.estate = state;
     }
 }
