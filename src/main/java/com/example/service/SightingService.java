@@ -80,8 +80,4 @@ public class SightingService {
 
         return missionLogRepository.save(missionLog);
     }
-
 }
-
-
-
