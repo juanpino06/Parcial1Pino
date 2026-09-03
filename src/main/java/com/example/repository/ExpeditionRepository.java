@@ -3,11 +3,11 @@ import com.example.model.Expedition;
 import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
-//starship
+
 @Repository
 public class ExpeditionRepository {
 
-    private List<Expedition> expeditions = new ArrayList<>() ;
+    private final List<Expedition> expeditions;
 
     public ExpeditionRepository() {
         expeditions = new ArrayList<>();
@@ -28,10 +28,9 @@ public class ExpeditionRepository {
         expedition2.setId(2);
         expedition2.setName("Expedition 2");
         expedition2.setCode("Exped2");
-        expedition2.setRegion("Valle");
-        expedition2.setBaseCamp("Cali");
-        expedition2.setLeader("Juan");
+        expedition2.setRegion("Narino");
+        expedition2.setBaseCamp("Pasto");
+        expedition2.setLeader("Valentina");
         expeditions.add(expedition2);
-
     }
 }

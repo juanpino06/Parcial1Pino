@@ -17,7 +17,7 @@ public class Sighting {
 
     public Sighting(int id,
                     String name,
-                    String sightiningCode,
+                    String SightingCode,
                     String description,
                     String scientificName,
                     String sightedAt,
@@ -28,7 +28,7 @@ public class Sighting {
                     ){
         this.id = id;
         this.name = name;
-        this.sightingCode = sightiningCode;
+        this.sightingCode = SightingCode;
         this.description = description;
         this.scientificName = scientificName;
         this.sightedAt = sightedAt;
