@@ -1,5 +1,6 @@
 package com.example.repository;
 import com.example.model.Expedition;
+import com.example.model.Sighting;
 import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,5 +33,14 @@ public class ExpeditionRepository {
         expedition2.setBaseCamp("Pasto");
         expedition2.setLeader("Valentina");
         expeditions.add(expedition2);
+    }
+
+    public Sighting findBySightingCode(String sightingCode) {
+        for (Sighting sighting : sightingCode) {
+            if (sighting.getSightingCode().equals(sightingCode)) {
+                return sighting;
+            }
+        }
+        return null;
     }
 }
